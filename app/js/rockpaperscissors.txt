@@ -1,8 +1,3 @@
-////////////////////////////////////////////////
-/*   Provided Code - Please Don't Edit   */
-////////////////////////////////////////////////
-'use strict';
-
 function getInput() {
     console.log("Please choose either 'rock', 'paper', or 'scissors'.")
     return prompt();
@@ -17,10 +12,7 @@ function randomPlay() {
         return "scissors";
     }
 }
-////////////////////////////////////////////////
-/*           Write Your Code Below            */
-////////////////////////////////////////////////
-
+    
 function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
     // If a `move` has a value, your expression should evaluate to that value.
@@ -91,11 +83,11 @@ function playToFive() {
     var playerWins = 0;
     var computerWins = 0;
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
-    if (playerWins === 5) {
+    if (playerWins === 3) {
         return 'Player Wins Best of 3';
     }
-    else if (computerWins === 5){
+    else if (computerWins === 3){
         return 'Computer Wins Best of 3';
     }
     return [playerWins, computerWins];
-}
+}    
